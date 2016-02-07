@@ -1,0 +1,8 @@
+//
+// Created by Dan Ye on 2/7/16.
+//
+
+#ifndef A2_MYDB_TABLERECITERATOR_H
+#define A2_MYDB_TABLERECITERATOR_H
+
+#endif //A2_MYDB_TABLERECITERATOR_H
