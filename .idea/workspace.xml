@@ -12,30 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e80e2eb8-5b30-481d-a39f-b1c7ea565dd3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageInfo.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/A2.iml" afterPath="$PROJECT_DIR$/.idea/A2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/BufferMgr/headers/MyDB_Page.h" afterPath="$PROJECT_DIR$/Main/BufferMgr/headers/MyDB_Page.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/BufferMgr/headers/MyDB_PageHandle.h" afterPath="$PROJECT_DIR$/Main/BufferMgr/headers/MyDB_PageHandle.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/BufferMgr/headers/TableCompare.h" afterPath="$PROJECT_DIR$/Main/BufferMgr/headers/TableCompare.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/BufferMgr/source/MyDB_BufferManager.cc" afterPath="$PROJECT_DIR$/Main/BufferMgr/source/MyDB_BufferManager.cc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/BufferMgr/source/MyDB_Page.cc" afterPath="$PROJECT_DIR$/Main/BufferMgr/source/MyDB_Page.cc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/BufferTest/source/BufferQUnit.cc" afterPath="$PROJECT_DIR$/Main/BufferTest/source/BufferQUnit.cc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/Catalog/source/MyDB_Catalog.cc" afterPath="$PROJECT_DIR$/Main/Catalog/source/MyDB_Catalog.cc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/Catalog/source/MyDB_Schema.cc" afterPath="$PROJECT_DIR$/Main/Catalog/source/MyDB_Schema.cc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/Catalog/source/MyDB_Table.cc" afterPath="$PROJECT_DIR$/Main/Catalog/source/MyDB_Table.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Build/SConstruct" afterPath="$PROJECT_DIR$/Build/SConstruct" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageReaderWriter.h" afterPath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageReaderWriter.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageRecIterator.h" afterPath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageRecIterator.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableReaderWriter.h" afterPath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableReaderWriter.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableRecIterator.h" afterPath="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableRecIterator.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc" afterPath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageRecIterator.cc" afterPath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageRecIterator.cc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc" afterPath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableRecIterator.cc" afterPath="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableRecIterator.cc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/Record/source/MyDB_Record.cc" afterPath="$PROJECT_DIR$/Main/Record/source/MyDB_Record.cc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/RecordTest/source/RecordQUnit.cc" afterPath="$PROJECT_DIR$/Main/RecordTest/source/RecordQUnit.cc" />
     </list>
     <ignored path="A2.iws" />
@@ -57,11 +38,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyDB_TableReaderWriter.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RecordQUnit.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main/RecordTest/source/RecordQUnit.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyDB_TableReaderWriter.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableReaderWriter.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5555553">
-              <caret line="59" column="41" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="41" />
+            <state vertical-scroll-proportion="2.2903225">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="e#40#57#0" expanded="true" />
               </folding>
@@ -81,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyDB_PageReaderWriter.cc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyDB_PageReaderWriter.cc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15037593">
-              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+            <state vertical-scroll-proportion="-12.777778">
+              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -95,8 +86,10 @@
         <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageReaderWriter.h">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="29" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="29" />
-              <folding />
+              <caret line="24" column="88" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
+              <folding>
+                <element signature="e#38#73#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,15 +119,15 @@
         <option value="$PROJECT_DIR$/Main/BufferMgr/headers/TableCompare.h" />
         <option value="$PROJECT_DIR$/Main/BufferMgr/source/MyDB_BufferManager.cc" />
         <option value="$PROJECT_DIR$/Main/BufferMgr/source/MyDB_Page.cc" />
-        <option value="$PROJECT_DIR$/Main/RecordTest/source/RecordQUnit.cc" />
         <option value="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageRecIterator.h" />
         <option value="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageRecIterator.cc" />
         <option value="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableRecIterator.h" />
         <option value="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableRecIterator.cc" />
-        <option value="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageReaderWriter.h" />
-        <option value="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableReaderWriter.h" />
         <option value="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc" />
+        <option value="$PROJECT_DIR$/Main/RecordTest/source/RecordQUnit.cc" />
+        <option value="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageReaderWriter.h" />
         <option value="$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc" />
+        <option value="$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableReaderWriter.h" />
       </list>
     </option>
   </component>
@@ -495,7 +488,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="708" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2203125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -503,7 +496,7 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3317684" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3317684" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -613,7 +606,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding>
-            <element signature="e#38#73#0" expanded="false" />
+            <element signature="e#38#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -911,32 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main/RecordTest/source/RecordQUnit.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80778587">
-          <caret line="182" column="29" selection-start-line="182" selection-start-column="29" selection-end-line="182" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableReaderWriter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5555553">
-          <caret line="59" column="41" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="41" />
-          <folding>
-            <element signature="e#40#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageReaderWriter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="29" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-33.88889">
@@ -947,11 +914,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Main/RecordTest/source/RecordQUnit.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_PageReaderWriter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="88" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
+          <folding>
+            <element signature="e#38#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15037593">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        <state vertical-scroll-proportion="-12.777778">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/DatabaseTable/headers/MyDB_TableReaderWriter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2903225">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

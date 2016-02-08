@@ -7,6 +7,9 @@
 #include "../../BufferMgr/headers/MyDB_PageHandle.h"
 #include "MyDB_PageRecIterator.h"
 #include "MyDB_PageInfo.h"
+#include <stdio.h>
+#include <fstream>
+#include <cstring>
 
 typedef shared_ptr <MyDB_PageReaderWriter> MyDB_PageReaderWriterPtr;
 

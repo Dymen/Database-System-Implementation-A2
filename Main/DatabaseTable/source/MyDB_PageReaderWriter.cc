@@ -16,7 +16,7 @@ MyDB_PageReaderWriter::MyDB_PageReaderWriter(bool newPage, size_t pageSize, MyDB
 	_recordPtr = recordPtr;
 	if (newPage) {
 		MyDB_PageInfo initInfo(sizeof(MyDB_PageInfo));
-		char *bytes = (char *) pageHandle->getBytes();
+		char *bytes = (char*)pageHandle->getBytes();
 		memcpy(bytes, &initInfo, sizeof(MyDB_PageInfo));
 	}
 }
@@ -32,7 +32,7 @@ void MyDB_PageReaderWriter :: reload(bool newPage, size_t pageSize, MyDB_PageHan
 	_recordPtr = recordPtr;
 	if (newPage) {
 		MyDB_PageInfo initInfo(sizeof(MyDB_PageInfo));
-		char *bytes = (char *) pageHandle->getBytes();
+		char *bytes = (char*)pageHandle->getBytes();
 		memcpy(bytes, &initInfo, sizeof(MyDB_PageInfo));
 	}
 }

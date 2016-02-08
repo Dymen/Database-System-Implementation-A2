@@ -61,7 +61,8 @@ if ans=="3":
 	common_env.Program ('bin/bufferUnitTest', ['../Main/BufferTest/source/BufferQUnit.cc', catalogSrc, recordSrc, bufferSrc])
 
 if ans=="4":
-	print("\nOK, building record unit tests.")
+	print("\nOK, building buffer unit tests using clang++.")
+	common_env.Replace(CXX = "clang++")
 	common_env.Program ('bin/recordUnitTest', ['../Main/RecordTest/source/RecordQUnit.cc', tableSrc, recordSrc, catalogSrc, bufferSrc])
 
 

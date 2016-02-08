@@ -75,12 +75,12 @@ int main () {
 		mySchema->appendAtt (make_pair ("comment", make_shared <MyDB_StringAttType> ()));
 
 		// use the schema to create a table
-		MyDB_TablePtr myTable = make_shared <MyDB_Table> ("supplier", "/Users/danye/Documents/Courses/COMP530/assignment2/A2/Build/supplier.bin", mySchema);
+		MyDB_TablePtr myTable = make_shared <MyDB_Table> ("supplier", "supplier.bin", mySchema);
 		MyDB_BufferManagerPtr myMgr = make_shared <MyDB_BufferManager> (1024, 16, "tempFile");
 		MyDB_TableReaderWriter supplierTable (myTable, myMgr);
 
 		// load it from a text file
-		supplierTable.loadFromTextFile ("/Users/danye/Documents/Courses/COMP530/assignment2/A2/Build/supplier.tbl");
+		supplierTable.loadFromTextFile ("supplier.tbl");
 
 		// put the supplier table into the catalog
 		myTable->putInCatalog (myCatalog);

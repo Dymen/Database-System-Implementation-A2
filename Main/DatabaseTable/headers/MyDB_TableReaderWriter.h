@@ -8,6 +8,11 @@
 #include "../../Catalog/headers/MyDB_Table.h"
 #include "../../BufferMgr/headers/MyDB_BufferManager.h"
 #include "MyDB_PageReaderWriter.h"
+#include <stdlib.h>
+#include <sys/fcntl.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
 
 // create a smart pointer for the catalog
 using namespace std;
