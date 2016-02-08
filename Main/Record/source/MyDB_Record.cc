@@ -2,8 +2,8 @@
 #ifndef RECORD_CC
 #define RECORD_CC
 
-#include "MyDB_Record.h"
-#include "MyDB_Schema.h"
+#include "../../Catalog/headers/MyDB_Schema.h"
+#include "../headers/MyDB_Record.h"
 #include <iostream>
 #include <string.h>
 

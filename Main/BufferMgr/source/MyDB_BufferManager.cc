@@ -15,9 +15,8 @@
 
 #include <fcntl.h>
 #include <iostream>
-#include "MyDB_Page.h"
 #include "../headers/MyDB_BufferManager.h"
-#include "../../Catalog/headers/MyDB_Table.h"
+#include "../headers/MyDB_Page.h"
 #include <sys/types.h>
 #include <sys/uio.h>
 #include <unistd.h>

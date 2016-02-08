@@ -13,7 +13,7 @@
 #define PAGE_H
 
 #include <memory>
-#include "MyDB_Table.h"
+#include "../../Catalog/headers/MyDB_Table.h"
 #include <string>
 
 // create a smart pointer for pages

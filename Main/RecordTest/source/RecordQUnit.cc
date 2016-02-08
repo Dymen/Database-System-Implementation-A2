@@ -2,17 +2,16 @@
 #ifndef RECORD_TEST_H
 #define RECORD_TEST_H
 
-#include "MyDB_AttType.h"  
-#include "MyDB_BufferManager.h"
-#include "MyDB_Catalog.h"  
-#include "MyDB_Page.h"
-#include "MyDB_PageReaderWriter.h"
-#include "MyDB_Record.h"
-#include "MyDB_Table.h"
-#include "MyDB_TableReaderWriter.h"
-#include "MyDB_Schema.h"
-#include "QUnit.h"
+#include "../../Catalog/headers/MyDB_AttType.h"
+#include "../../BufferMgr/headers/MyDB_BufferManager.h"
+#include "../../Catalog/headers/MyDB_Catalog.h"
+#include "../../BufferMgr/headers/MyDB_Page.h"
+#include "../../DatabaseTable/headers/MyDB_PageReaderWriter.h"
+#include "../../Record/headers/MyDB_Record.h"
+#include "../../Catalog/headers/MyDB_Table.h"
+#include "../../Catalog/headers/MyDB_Schema.h"
 #include "../../DatabaseTable/headers/MyDB_TableReaderWriter.h"
+#include "../../Qunit/headers/QUnit.h"
 #include <iostream>
 
 int main () {
@@ -41,6 +40,13 @@ int main () {
 		cout << myTable << "\n";
 		cout << yourTable << "\n";
 		cout << "\n\n";
+		/*
+		MyDB_Record *test = new MyDB_Record(mySchema);
+		test->fromString("");
+		cout << test->getBinarySize() << endl << endl;
+		if (true)
+			return 0;
+		 */
 	}
 
 	{
@@ -69,12 +75,12 @@ int main () {
 		mySchema->appendAtt (make_pair ("comment", make_shared <MyDB_StringAttType> ()));
 
 		// use the schema to create a table
-		MyDB_TablePtr myTable = make_shared <MyDB_Table> ("supplier", "supplier.bin", mySchema);
+		MyDB_TablePtr myTable = make_shared <MyDB_Table> ("supplier", "/Users/danye/Documents/Courses/COMP530/assignment2/A2/Build/supplier.bin", mySchema);
 		MyDB_BufferManagerPtr myMgr = make_shared <MyDB_BufferManager> (1024, 16, "tempFile");
 		MyDB_TableReaderWriter supplierTable (myTable, myMgr);
 
 		// load it from a text file
-		supplierTable.loadFromTextFile ("supplier.tbl");
+		supplierTable.loadFromTextFile ("/Users/danye/Documents/Courses/COMP530/assignment2/A2/Build/supplier.tbl");
 
 		// put the supplier table into the catalog
 		myTable->putInCatalog (myCatalog);
@@ -91,6 +97,7 @@ int main () {
 		// now, go to the 37th page and iterate over it
 		MyDB_RecordPtr temp = supplierTable.getEmptyRecord ();
 		MyDB_RecordIteratorPtr myIter = supplierTable[36].getIterator (temp);
+
 		while (myIter->hasNext ()) {
 			myIter->getNext ();
 			cout << temp << "\n";
@@ -115,6 +122,7 @@ int main () {
 		while (myIter->hasNext ()) {
 			myIter->getNext ();
 			counter++;
+
 	 	}
 		QUNIT_IS_EQUAL (counter, 10000);
 	}
@@ -191,7 +199,6 @@ int main () {
 		// test the iterator by looping through all of the records in the file
 		MyDB_RecordPtr temp = supplierTable.getEmptyRecord ();
 		MyDB_RecordIteratorPtr myIter = supplierTable.getIterator (temp);
-
 		// there should be less than 10000 records
 		int counter = 0;
 		while (myIter->hasNext ()) {

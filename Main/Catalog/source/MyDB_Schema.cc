@@ -3,7 +3,8 @@
 #define SCHEMA_C
 
 #include <iostream>
-#include "MyDB_Schema.h"
+#include "../headers/MyDB_AttType.h"
+#include "../headers/MyDB_Schema.h"
 
 using namespace std;
 

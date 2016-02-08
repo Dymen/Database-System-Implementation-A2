@@ -15,7 +15,7 @@
 
 #include <memory>
 #include "MyDB_Page.h"
-#include "MyDB_Table.h"
+#include "../../Catalog/headers/MyDB_Table.h"
 #include <string>
 
 // page handles are basically smart pointers

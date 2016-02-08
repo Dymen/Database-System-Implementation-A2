@@ -7,9 +7,11 @@
 #include "../../Record/headers/MyDB_Record.h"
 #include "../../Catalog/headers/MyDB_Table.h"
 #include "../../BufferMgr/headers/MyDB_BufferManager.h"
+#include "MyDB_PageReaderWriter.h"
 
 // create a smart pointer for the catalog
 using namespace std;
+
 class MyDB_PageReaderWriter;
 class MyDB_TableReaderWriter;
 typedef shared_ptr <MyDB_TableReaderWriter> MyDB_TableReaderWriterPtr;
@@ -23,6 +25,8 @@ public:
 	// create a table reader/writer for the specified table, using the specified
 	// buffer manager
 	MyDB_TableReaderWriter (MyDB_TablePtr forMe, MyDB_BufferManagerPtr myBuffer);
+
+	~MyDB_TableReaderWriter();
 
 	// gets an empty record from this table
 	MyDB_RecordPtr getEmptyRecord ();
@@ -44,10 +48,16 @@ public:
 	// access the i^th page in this file
 	MyDB_PageReaderWriter &operator [] (size_t i);
 
-        // access the last page in the file
-        MyDB_PageReaderWriter &last ();
+	// access the last page in the file
+	MyDB_PageReaderWriter &last ();
 
 private:
+	MyDB_BufferManagerPtr _bufferMgr;
+	MyDB_TablePtr _table;
+	MyDB_RecordPtr _recordPtr;
+	size_t _pageSize;
+	size_t _numPage;
+	MyDB_PageReaderWriter *_pageSelector;
 
 	// ANYTHING YOU NEED HERE
 };

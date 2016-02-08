@@ -12,9 +12,9 @@
 #ifndef PAGE_C
 #define PAGE_C
 
-#include "MyDB_BufferManager.h"
-#include "MyDB_Page.h"
-#include "MyDB_Table.h"
+#include "../headers/MyDB_BufferManager.h"
+#include "../headers/MyDB_Page.h"
+#include "../../Catalog/headers/MyDB_Table.h"
 
 void *MyDB_Page :: getBytes () {
 	parent.access (*this);	

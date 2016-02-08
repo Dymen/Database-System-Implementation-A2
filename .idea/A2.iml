@@ -16,6 +16,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Main/BufferMgr/headers/PageCompare.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Main/BufferMgr/headers/CheckLRU.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Main/BufferMgr/headers/MyDB_Page.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Main/BufferMgr/source/MyDB_PageHandle.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Main/BufferMgr/source/MyDB_Page.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Main/BufferMgr/source/MyDB_BufferManager.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Main/Record/headers/MyDB_AttVal.h" isTestSource="false" />
@@ -25,14 +26,15 @@
       <sourceFolder url="file://$MODULE_DIR$/Main/RecordTest/source/RecordQUnit.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Main/Qunit/headers/QUnit.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/headers/MyDB_PageRecIterator.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/headers/MyDB_TableReaderWriter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/headers/MyDB_RecordIterator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/headers/MyDB_PageReaderWriter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/headers/MyDB_PageInfo.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/headers/MyDB_TableReaderWriter.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/headers/MyDB_TableRecIterator.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/headers/MyDB_RecordIterator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/source/MyDB_TableReaderWriter.cc" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/source/MyDB_PageRecIterator.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/source/MyDB_TableRecIterator.cc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/source/MyDB_PageReaderWriter.cc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Main/DatabaseTable/source/MyDB_PageRecIterator.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Main/BufferTest/source/BufferQUnit.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>

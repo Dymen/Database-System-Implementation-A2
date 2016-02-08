@@ -12,7 +12,7 @@
 #ifndef TABLE_COMP_H
 #define TABLE_COMP_H
 
-#include "MyDB_Table.h"
+#include "../../Catalog/headers/MyDB_Table.h"
 
 // so that pages can be put into a map
 struct TableCompare {

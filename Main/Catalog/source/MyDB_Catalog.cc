@@ -2,18 +2,19 @@
 #ifndef CATALOG_C
 #define CATALOG_C
 
-#include "MyDB_Catalog.h"
+#include "../headers/MyDB_Catalog.h"
 #include <fstream>
 #include <iostream>
 #include <sstream>
 #include <string>
 
-#include "MyDB_AttType.h"
-#include "MyDB_AttVal.h"
-#include "MyDB_Catalog.h"
-#include "MyDB_Record.h"
-#include "MyDB_Schema.h"
-#include "MyDB_Table.h"
+#include "../headers/MyDB_AttType.h"
+#include "../../Record/headers/MyDB_AttVal.h"
+#include "../headers/MyDB_Catalog.h"
+#include "../../Record/headers/MyDB_Record.h"
+#include "../headers/MyDB_Schema.h"
+#include "../headers/MyDB_Table.h"
+#include "../headers/MyDB_Catalog.h"
 
 void MyDB_Catalog :: putString (string key, string value) {
 	myData [key] = value;

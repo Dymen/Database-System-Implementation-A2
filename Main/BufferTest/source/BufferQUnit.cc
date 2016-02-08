@@ -2,11 +2,11 @@
 #ifndef CATALOG_UNIT_H
 #define CATALOG_UNIT_H
 
-#include "MyDB_BufferManager.h"
-#include "MyDB_Catalog.h"
-#include "MyDB_Page.h"
-#include "MyDB_Table.h"
-#include "QUnit.h"
+#include "../../BufferMgr/headers/MyDB_BufferManager.h"
+#include "../../Catalog/headers/MyDB_Catalog.h"
+#include "../../BufferMgr/headers/MyDB_Page.h"
+#include "../../Catalog/headers/MyDB_Table.h"
+#include "../../Qunit/headers/QUnit.h"
 #include <iostream>
 #include <unistd.h>
 
@@ -34,7 +34,7 @@ void writeSymbols (char *bytes, size_t len, int i) {
 	bytes[len - 1] = 0;
 }
 
-int main () {
+int main1 () {
 
 	QUnit::UnitTest qunit(cerr, QUnit::verbose);
 
