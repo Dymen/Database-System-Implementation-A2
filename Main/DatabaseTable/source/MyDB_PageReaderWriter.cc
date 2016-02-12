@@ -10,11 +10,13 @@ MyDB_PageReaderWriter::MyDB_PageReaderWriter(){
 	_recordPtr = nullptr;
 }
 
+//'newPage' variable is set to TRUE only when loading data from file
 MyDB_PageReaderWriter::MyDB_PageReaderWriter(bool newPage, size_t pageSize, MyDB_PageHandle pageHandle, MyDB_RecordPtr recordPtr) {
 	_pageSize = pageSize;
 	_pageHandle = pageHandle;
 	_recordPtr = recordPtr;
 	if (newPage) {
+		//Initialize header saving page information
 		MyDB_PageInfo initInfo(sizeof(MyDB_PageInfo));
 		char *bytes = (char*)pageHandle->getBytes();
 		memcpy(bytes, &initInfo, sizeof(MyDB_PageInfo));
@@ -26,6 +28,7 @@ MyDB_PageReaderWriter::~MyDB_PageReaderWriter(){
 	_recordPtr = nullptr;
 }
 
+//Refresh data saved in the PageReaderWriter
 void MyDB_PageReaderWriter :: reload(bool newPage, size_t pageSize, MyDB_PageHandle pageHandle, MyDB_RecordPtr recordPtr){
 	_pageSize = pageSize;
 	_pageHandle = pageHandle;
@@ -37,11 +40,11 @@ void MyDB_PageReaderWriter :: reload(bool newPage, size_t pageSize, MyDB_PageHan
 	}
 }
 
+//Clear only needs to modify the data saved in the header of pageInfo
 void MyDB_PageReaderWriter :: clear () {
 	char* bytes = (char*)_pageHandle->getBytes();
 	MyDB_PageInfo *temp = (MyDB_PageInfo *) bytes;
 	temp->_lastByte = sizeof(MyDB_PageInfo);
-	//memcpy(bytes, temp, sizeof(MyDB_PageInfo));
 	_pageHandle->wroteBytes();
 }
 

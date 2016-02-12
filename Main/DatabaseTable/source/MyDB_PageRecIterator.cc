@@ -24,8 +24,10 @@ void MyDB_PageRecIterator::getNext() {
     char* bytes = (char*)_pageHandle->getBytes();
     MyDB_PageInfo *temp = (MyDB_PageInfo *) bytes;
 
-    if (_curOffset >= temp->_lastByte)
-        return;
+    if (_curOffset >= temp->_lastByte) {
+        cerr << "getNext() reached outside the scope fo the record iterator.\n";
+        exit(1);
+    }
     _recordPtr->fromBinary(bytes + _curOffset);
     _curOffset += _recordPtr->getBinarySize();
 }

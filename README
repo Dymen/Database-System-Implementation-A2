@@ -1,0 +1,9 @@
+Group member:
+Dan Ye
+Peng Du
+
+Some clarifications of our method:
+
+1. In the overriding operator []: we maintain a pre-allocated PageReaderWriter, only reload its content when the operator being called.
+
+2. When a record is too large to fit into a single page, we simply output an error message and exit the program.

@@ -12,6 +12,7 @@ MyDB_TableRecIterator::MyDB_TableRecIterator(MyDB_BufferManagerPtr bufferMgr, My
     _pageSize = pageSize;
     _recordPtr = recordPtr;
     _numPage = numPage;
+    //TableIterator always starts with the first page
     _curPage = 0;
     _table = table;
     _bufferMgr = bufferMgr;
@@ -26,8 +27,10 @@ MyDB_TableRecIterator::~MyDB_TableRecIterator(){
 
 void MyDB_TableRecIterator::getNext(){
     if (! _curPageRecIt->hasNext()) {
-        if (_curPage == _table->lastPage())
-            return;
+        if (_curPage == _table->lastPage()) {
+            cerr << "getNext() reached outside the scope fo the record iterator.\n";
+            exit(1);
+        }
         _curPage++;
         _curPageRecIt = make_shared<MyDB_PageRecIterator>(_recordPtr, _bufferMgr->getPage(_table, _curPage), _pageSize);
     }

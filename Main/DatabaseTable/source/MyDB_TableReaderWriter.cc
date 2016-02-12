@@ -27,11 +27,13 @@ MyDB_TableReaderWriter :: ~MyDB_TableReaderWriter(){
 	delete _pageSelector;
 }
 
+//Always return the reference of the same object, which is refreshed everty this function is called
 MyDB_PageReaderWriter &MyDB_TableReaderWriter :: operator [] (size_t pageNo) {
 	_pageSelector->reload(false, _pageSize, _bufferMgr->getPage(_table, pageNo), _recordPtr);
 	return *(_pageSelector);
 }
 
+//Return a new recordPtr with a pecific schema
 MyDB_RecordPtr MyDB_TableReaderWriter :: getEmptyRecord () {
 	return make_shared<MyDB_Record>(_table->getSchema());
 }
@@ -46,29 +48,27 @@ void MyDB_TableReaderWriter :: append (MyDB_RecordPtr recordPtr) {
 	MyDB_PageReaderWriterPtr newPagePtr;
 	if (! lastPage.append(recordPtr)){
 		_numPage ++;
-		newPagePtr = make_shared<MyDB_PageReaderWriter>(false, _pageSize, _bufferMgr->getPage(_table, _numPage), _recordPtr);
-		newPagePtr->append(recordPtr);
+		newPagePtr = make_shared<MyDB_PageReaderWriter>(true, _pageSize, _bufferMgr->getPage(_table, _numPage), _recordPtr);
+		if (! newPagePtr->append(recordPtr)){
+			cerr << "Record is too large to fit into one single page.\n";
+			exit(1);
+		}
+		_table->setLastPage(_numPage);
 	}
-	_table->setLastPage(_numPage);
 }
 
 void MyDB_TableReaderWriter :: loadFromTextFile (string fileLoc) {
 	ifstream fin(fileLoc, ios::in);
 	char* curRec = new char[_pageSize];
-	MyDB_PageReaderWriterPtr curPagePtr;
 
 	_numPage = 0;
-	curPagePtr = make_shared<MyDB_PageReaderWriter>(true, _pageSize, _bufferMgr->getPage(_table, _numPage), _recordPtr);
+	_table->setLastPage(_numPage);
+	_pageSelector->reload(true, _pageSize, _bufferMgr->getPage(_table, _numPage), _recordPtr);
 	while (fin.getline(curRec, _pageSize)){
 		_recordPtr->fromString(curRec);
-		if (! curPagePtr->append(_recordPtr)){
-			_numPage ++;
-			curPagePtr = make_shared<MyDB_PageReaderWriter>(true, _pageSize, _bufferMgr->getPage(_table, _numPage), _recordPtr);
-			curPagePtr->append(_recordPtr);
-		}
-		_table->setLastPage(_numPage);
+		append(_recordPtr);
 	}
-
+	fin.close();
 	delete [] curRec;
 }
 
